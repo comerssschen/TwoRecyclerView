@@ -1,0 +1,339 @@
+{
+  "categoryOneArray": [
+    {
+      "categoryTwoArray": [
+        {
+          "name": "香辣鸡腿堡套餐",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_tongsufenlei_chufangyao.png",
+          "price": "19.00",
+          "cacode": "0"
+        },
+        {
+          "name": "薯条套餐",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_tongsufenlei_feichufang.png",
+          "price": "25.00",
+          "cacode": "0"
+        },
+        {
+          "name": "双人套餐A",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_tongsufenlei_kangshengsu.png",
+          "price": "59.00",
+          "cacode": "0"
+        },
+        {
+          "name": "双人套餐套餐B",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_tongsufenlei_kangshengsu.png",
+          "price": "49.00",
+          "cacode": "0"
+        },
+        {
+          "name": "奥尔良鸡腿堡小食套餐",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_tongsufenlei_kangshengsu.png",
+          "price": "29.00",
+          "cacode": "0"
+        },
+        {
+          "name": "鸡腿堡套餐B",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_tongsufenlei_kangshengsu.png",
+          "price": "39.00",
+          "cacode": "0"
+        },
+        {
+          "name": "单人热辣套餐A",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_tongsufenlei_kangshengsu.png",
+          "price": "39.00",
+          "cacode": "0"
+        },
+        {
+          "name": "单人热辣套餐B",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_tongsufenlei_kangshengsu.png",
+          "price": "49.00",
+          "cacode": "0"
+        },
+        {
+          "name": "老北京鸡肉卷套餐",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_tongsufenlei_kangshengsu.png",
+          "price": "29.00",
+          "cacode": "0"
+        },
+        {
+          "name": "田园堡单人套餐",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_tongsufenlei_kangshengsu.png",
+          "price": "39.00",
+          "cacode": "0"
+        },
+        {
+          "name": "劲脆鲜虾堡套餐A",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_tongsufenlei_kangshengsu.png",
+          "price": "63.00",
+          "cacode": "0"
+        },
+        {
+          "name": "劲脆鲜虾堡套餐B",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_tongsufenlei_kangshengsu.png",
+          "price": "69.00",
+          "cacode": "0"
+        },
+        {
+          "name": "牛肉堡单人套餐",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_tongsufenlei_kangshengsu.png",
+          "price": "42.00",
+          "cacode": "0"
+        },
+        {
+          "name": "牛肉堡双人套餐",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_tongsufenlei_kangshengsu.png",
+          "price": "63.00",
+          "cacode": "0"
+        },
+        {
+          "name": "蜜汁鸡腿套餐",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_tongsufenlei_kangshengsu.png",
+          "price": "29.00",
+          "cacode": "0"
+        },
+        {
+          "name": "h合家欢套餐",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_tongsufenlei_kangshengsu.png",
+          "price": "39.00",
+          "cacode": "0"
+        },
+        {
+          "name": "辣翅套餐",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_tongsufenlei_kangshengsu.png",
+          "price": "32.00",
+          "cacode": "0"
+        },
+        {
+          "name": "双享套餐",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_tongsufenlei_kangshengsu.png",
+          "price": "48.00",
+          "cacode": "0"
+        }
+      ],
+      "name": "我是标题我是标题我是标题我是标题我是标题",
+      "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_0.png",
+      "cacode": "0"
+    },
+    {
+      "categoryTwoArray": [
+        {
+          "name": "吉士蛋堡",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_20_20155.png",
+          "price": "8.00",
+          "cacode": "1"
+        },
+        {
+          "name": "脆薯饼",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_20_20154.png",
+          "price": "6.00",
+          "cacode": "1"
+        },
+        {
+          "name": "脆香油条",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_20_20154.png",
+          "price": "9.00",
+          "cacode": "1"
+        },
+        {
+          "name": "猪柳麦满分",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_20_20154.png",
+          "price": "10.00",
+          "cacode": "1"
+        },
+        {
+          "name": "优享早餐",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_20_20154.png",
+          "price": "16.00",
+          "cacode": "1"
+        },
+        {
+          "name": "板烧鸡腿早餐",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_20_20154.png",
+          "price": "18.00",
+          "cacode": "1"
+        },
+        {
+          "name": "烟肉早餐",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_20_20154.png",
+          "price": "16.00",
+          "cacode": "1"
+        }
+      ],
+      "name": "营养早餐",
+      "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_1.png",
+      "price": "0000",
+      "cacode": "1"
+    },
+    {
+      "categoryTwoArray": [
+        {
+          "name": "香辣鸡腿堡",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_18_18137.png",
+          "price": "16.00",
+          "cacode": "2"
+        },
+        {
+          "name": "劲脆鲜虾堡",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_18_18144.png",
+          "price": "25.00",
+          "cacode": "2"
+        },
+        {
+          "name": "板烧汉堡",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_18_18144.png",
+          "price": "59.00",
+          "cacode": "2"
+        },
+        {
+          "name": "牛肉汉堡",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_18_18144.png",
+          "price": "49.00",
+          "cacode": "2"
+        },
+        {
+          "name": "墨西哥鸡肉卷",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_18_18144.png",
+          "price": "29.00",
+          "cacode": "2"
+        }
+      ],
+      "name": "主食系列",
+      "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_2.png",
+      "price": "0000",
+      "cacode": "2"
+    },
+    {
+      "categoryTwoArray": [
+        {
+          "name": "鸡米花",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_19_19138.png",
+          "price": "16.00",
+          "cacode": "3"
+        },
+        {
+          "name": "香辣鸡腿",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_19_19149.png",
+          "price": "18.00",
+          "cacode": "3"
+        },
+        {
+          "name": "新奥尔良烤翅",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_19_19149.png",
+          "price": "16.00",
+          "cacode": "3"
+        },
+        {
+          "name": "蜜汁扒鸡",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_19_19149.png",
+          "price": "32.00",
+          "cacode": "3"
+        },
+        {
+          "name": "黑椒鸡块",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_19_19149.png",
+          "price": "29.00",
+          "cacode": "3"
+        },
+        {
+          "name": "骨肉相连",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_19_19149.png",
+          "price": "14.00",
+          "cacode": "3"
+        },
+        {
+          "name": "玉米小食",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_19_19149.png",
+          "price": "13.00",
+          "cacode": "3"
+        }
+      ],
+      "name": "休闲小食",
+      "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_3.png",
+      "price": "0000",
+      "cacode": "3"
+    },
+    {
+      "categoryTwoArray": [
+        {
+          "name": "奥利奥麦旋风",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_13_13116.png",
+          "price": "16.00",
+          "cacode": "4"
+        },
+        {
+          "name": "巧克力圣代",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_13_13116.png",
+          "price": "8.00",
+          "cacode": "4"
+        },
+        {
+          "name": "芒果派",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_13_13116.png",
+          "price": "8.00",
+          "cacode": "4"
+        },
+        {
+          "name": "香芋派",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_13_13116.png",
+          "price": "8.00",
+          "cacode": "4"
+        },
+        {
+          "name": "超大甜筒",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_13_13116.png",
+          "price": "14.00",
+          "cacode": "4"
+        }
+      ],
+      "name": "特色甜点",
+      "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_4.png",
+      "price": "0000",
+      "cacode": "4"
+    },
+    {
+      "categoryTwoArray": [
+        {
+          "name": "锡兰红茶",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_10_10101.png",
+          "price": "12.00",
+          "cacode": "5"
+        },
+        {
+          "name": "热朱古力/抗疲劳类",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_10_10109.png",
+          "price": "12.00",
+          "cacode": "5"
+        },
+        {
+          "name": "鲜煮咖啡",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_10_10102.png",
+          "price": "23.00",
+          "cacode": "5"
+        },
+        {
+          "name": "鲜牛奶",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_10_10108.png",
+          "price": "0000",
+          "cacode": "5"
+        },
+        {
+          "name": "阳光橙",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_10_10104.png",
+          "price": "16.00",
+          "cacode": "5"
+        },
+        {
+          "name": "优选豆浆",
+          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_10_10103.png",
+          "price": "8.00",
+          "cacode": "5"
+        }
+      ],
+      "name": "人气饮品",
+      "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_5.png",
+      "price": "0000",
+      "cacode": "5"
+    }
+  ]
+}

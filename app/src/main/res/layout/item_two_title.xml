@@ -2,16 +2,11 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/rl"
     android:layout_width="match_parent"
-    android:layout_height="200dp"
+    android:layout_height="50dp"
     android:gravity="center"
     android:background="@drawable/card_red"
     android:orientation="vertical">
 
-    <ImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:scaleType="fitXY"
-        android:src="@mipmap/ic_launcher" />
 
     <TextView
         android:id="@+id/tv"
