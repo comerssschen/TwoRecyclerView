@@ -4,7 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="50dp"
     android:gravity="center"
-    android:background="@drawable/card_red"
     android:orientation="vertical">
 
 
@@ -13,6 +12,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="5465465"
-        android:textSize="20dp" />
+        android:textSize="12sp" />
 
 </LinearLayout>

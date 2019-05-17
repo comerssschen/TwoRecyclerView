@@ -3,335 +3,389 @@
     {
       "categoryTwoArray": [
         {
+          "goodsId": 10000010,
           "name": "香辣鸡腿堡套餐",
-          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_tongsufenlei_chufangyao.png",
+          "imgsrc": "https://comersss.gitee.io/apk/image/group1_item1.png",
           "price": "19.00",
           "cacode": "0"
         },
         {
+          "goodsId": 10000011,
           "name": "薯条套餐",
-          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_tongsufenlei_feichufang.png",
+          "imgsrc": "https://comersss.gitee.io/apk/image/group1_item1.png",
           "price": "25.00",
           "cacode": "0"
         },
         {
+          "goodsId": 10000012,
           "name": "双人套餐A",
-          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_tongsufenlei_kangshengsu.png",
+          "imgsrc": "https://comersss.gitee.io/apk/image/group1_item1.png",
           "price": "59.00",
           "cacode": "0"
         },
         {
+          "goodsId": 10000013,
           "name": "双人套餐套餐B",
-          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_tongsufenlei_kangshengsu.png",
+          "imgsrc": "https://comersss.gitee.io/apk/image/group1_item1.png",
           "price": "49.00",
           "cacode": "0"
         },
         {
+          "goodsId": 10000014,
           "name": "奥尔良鸡腿堡小食套餐",
-          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_tongsufenlei_kangshengsu.png",
+          "imgsrc": "https://comersss.gitee.io/apk/image/group1_item1.png",
           "price": "29.00",
           "cacode": "0"
         },
         {
+          "goodsId": 10000015,
           "name": "鸡腿堡套餐B",
-          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_tongsufenlei_kangshengsu.png",
+          "imgsrc": "https://comersss.gitee.io/apk/image/group1_item1.png",
           "price": "39.00",
           "cacode": "0"
         },
         {
+          "goodsId": 10000016,
           "name": "单人热辣套餐A",
-          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_tongsufenlei_kangshengsu.png",
+          "imgsrc": "https://comersss.gitee.io/apk/image/group1_item1.png",
           "price": "39.00",
           "cacode": "0"
         },
         {
+          "goodsId": 10000017,
           "name": "单人热辣套餐B",
-          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_tongsufenlei_kangshengsu.png",
+          "imgsrc": "https://comersss.gitee.io/apk/image/group1_item1.png",
           "price": "49.00",
           "cacode": "0"
         },
         {
+          "goodsId": 10000018,
           "name": "老北京鸡肉卷套餐",
-          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_tongsufenlei_kangshengsu.png",
+          "imgsrc": "https://comersss.gitee.io/apk/image/group1_item1.png",
           "price": "29.00",
           "cacode": "0"
         },
         {
+          "goodsId": 10000019,
           "name": "田园堡单人套餐",
-          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_tongsufenlei_kangshengsu.png",
+          "imgsrc": "https://comersss.gitee.io/apk/image/group1_item1.png",
           "price": "39.00",
           "cacode": "0"
         },
         {
+          "goodsId": 100000110,
           "name": "劲脆鲜虾堡套餐A",
-          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_tongsufenlei_kangshengsu.png",
+          "imgsrc": "https://comersss.gitee.io/apk/image/group1_item1.png",
           "price": "63.00",
           "cacode": "0"
         },
         {
+          "goodsId": 100000111,
           "name": "劲脆鲜虾堡套餐B",
-          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_tongsufenlei_kangshengsu.png",
+          "imgsrc": "https://comersss.gitee.io/apk/image/group1_item1.png",
           "price": "69.00",
           "cacode": "0"
         },
         {
+          "goodsId": 100000112,
           "name": "牛肉堡单人套餐",
-          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_tongsufenlei_kangshengsu.png",
+          "imgsrc": "https://comersss.gitee.io/apk/image/group1_item1.png",
           "price": "42.00",
           "cacode": "0"
         },
         {
+          "goodsId": 100000113,
           "name": "牛肉堡双人套餐",
-          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_tongsufenlei_kangshengsu.png",
+          "imgsrc": "https://comersss.gitee.io/apk/image/group1_item1.png",
           "price": "63.00",
           "cacode": "0"
         },
         {
+          "goodsId": 100000114,
           "name": "蜜汁鸡腿套餐",
-          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_tongsufenlei_kangshengsu.png",
+          "imgsrc": "https://comersss.gitee.io/apk/image/group1_item1.png",
           "price": "29.00",
           "cacode": "0"
         },
         {
+          "goodsId": 100000115,
           "name": "h合家欢套餐",
-          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_tongsufenlei_kangshengsu.png",
+          "imgsrc": "https://comersss.gitee.io/apk/image/group1_item1.png",
           "price": "39.00",
           "cacode": "0"
         },
         {
+          "goodsId": 100000116,
           "name": "辣翅套餐",
-          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_tongsufenlei_kangshengsu.png",
+          "imgsrc": "https://comersss.gitee.io/apk/image/group1_item1.png",
           "price": "32.00",
           "cacode": "0"
         },
         {
+          "goodsId": 100000117,
           "name": "双享套餐",
-          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_tongsufenlei_kangshengsu.png",
+          "imgsrc": "https://comersss.gitee.io/apk/image/group1_item1.png",
           "price": "48.00",
           "cacode": "0"
         }
       ],
-      "name": "我是标题我是标题我是标题我是标题我是标题",
-      "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_0.png",
+      "goodsId": 100000118,
+      "name": "热卖套餐",
+      "imgsrc": "https://comersss.gitee.io/apk/image/group1_item1.png",
       "cacode": "0"
     },
     {
       "categoryTwoArray": [
         {
+          "goodsId": 100000119,
           "name": "吉士蛋堡",
-          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_20_20155.png",
+          "imgsrc": "https://comersss.gitee.io/apk/image/group1_item1.png",
           "price": "8.00",
           "cacode": "1"
         },
         {
+          "goodsId": 100000120,
           "name": "脆薯饼",
-          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_20_20154.png",
+          "imgsrc": "https://comersss.gitee.io/apk/image/group1_item1.png",
           "price": "6.00",
           "cacode": "1"
         },
         {
+          "goodsId": 100000121,
           "name": "脆香油条",
-          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_20_20154.png",
+          "imgsrc": "https://comersss.gitee.io/apk/image/group1_item1.png",
           "price": "9.00",
           "cacode": "1"
         },
         {
+          "goodsId": 100000122,
           "name": "猪柳麦满分",
-          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_20_20154.png",
+          "imgsrc": "https://comersss.gitee.io/apk/image/group1_item1.png",
           "price": "10.00",
           "cacode": "1"
         },
         {
+          "goodsId": 100000123,
           "name": "优享早餐",
-          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_20_20154.png",
+          "imgsrc": "https://comersss.gitee.io/apk/image/group1_item1.png",
           "price": "16.00",
           "cacode": "1"
         },
         {
+          "goodsId": 100000124,
           "name": "板烧鸡腿早餐",
-          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_20_20154.png",
+          "imgsrc": "https://comersss.gitee.io/apk/image/group1_item1.png",
           "price": "18.00",
           "cacode": "1"
         },
         {
+          "goodsId": 100000125,
           "name": "烟肉早餐",
-          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_20_20154.png",
+          "imgsrc": "https://comersss.gitee.io/apk/image/group1_item1.png",
           "price": "16.00",
           "cacode": "1"
         }
       ],
+      "goodsId": 100000126,
       "name": "营养早餐",
-      "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_1.png",
+      "imgsrc": "https://comersss.gitee.io/apk/image/group1_item1.png",
       "price": "0000",
       "cacode": "1"
     },
     {
       "categoryTwoArray": [
         {
+          "goodsId": 100000127,
           "name": "香辣鸡腿堡",
-          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_18_18137.png",
+          "imgsrc": "https://comersss.gitee.io/apk/image/group1_item1.png",
           "price": "16.00",
           "cacode": "2"
         },
         {
+          "goodsId": 100000128,
           "name": "劲脆鲜虾堡",
-          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_18_18144.png",
+          "imgsrc": "https://comersss.gitee.io/apk/image/group1_item1.png",
           "price": "25.00",
           "cacode": "2"
         },
         {
+          "goodsId": 100000129,
           "name": "板烧汉堡",
-          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_18_18144.png",
+          "imgsrc": "https://comersss.gitee.io/apk/image/group1_item1.png",
           "price": "59.00",
           "cacode": "2"
         },
         {
+          "goodsId": 100000130,
           "name": "牛肉汉堡",
-          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_18_18144.png",
+          "imgsrc": "https://comersss.gitee.io/apk/image/group1_item1.png",
           "price": "49.00",
           "cacode": "2"
         },
         {
+          "goodsId": 100000131,
           "name": "墨西哥鸡肉卷",
-          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_18_18144.png",
+          "imgsrc": "https://comersss.gitee.io/apk/image/group1_item1.png",
           "price": "29.00",
           "cacode": "2"
         }
       ],
+      "goodsId": 100000132,
       "name": "主食系列",
-      "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_2.png",
+      "imgsrc": "https://comersss.gitee.io/apk/image/group1_item1.png",
       "price": "0000",
       "cacode": "2"
     },
     {
       "categoryTwoArray": [
         {
+          "goodsId": 100000133,
           "name": "鸡米花",
-          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_19_19138.png",
+          "imgsrc": "https://comersss.gitee.io/apk/image/group1_item1.png",
           "price": "16.00",
           "cacode": "3"
         },
         {
+          "goodsId": 100000134,
           "name": "香辣鸡腿",
-          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_19_19149.png",
+          "imgsrc": "https://comersss.gitee.io/apk/image/group1_item1.png",
           "price": "18.00",
           "cacode": "3"
         },
         {
+          "goodsId": 100000135,
           "name": "新奥尔良烤翅",
-          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_19_19149.png",
+          "imgsrc": "https://comersss.gitee.io/apk/image/group1_item1.png",
           "price": "16.00",
           "cacode": "3"
         },
         {
+          "goodsId": 100000136,
           "name": "蜜汁扒鸡",
-          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_19_19149.png",
+          "imgsrc": "https://comersss.gitee.io/apk/image/group1_item1.png",
           "price": "32.00",
           "cacode": "3"
         },
         {
+          "goodsId": 100000137,
           "name": "黑椒鸡块",
-          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_19_19149.png",
+          "imgsrc": "https://comersss.gitee.io/apk/image/group1_item1.png",
           "price": "29.00",
           "cacode": "3"
         },
         {
+          "goodsId": 100000138,
           "name": "骨肉相连",
-          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_19_19149.png",
+          "imgsrc": "https://comersss.gitee.io/apk/image/group1_item1.png",
           "price": "14.00",
           "cacode": "3"
         },
         {
+          "goodsId": 100000139,
           "name": "玉米小食",
-          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_19_19149.png",
+          "imgsrc": "https://comersss.gitee.io/apk/image/group1_item1.png",
           "price": "13.00",
           "cacode": "3"
         }
       ],
+      "goodsId": 100000140,
       "name": "休闲小食",
-      "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_3.png",
+      "imgsrc": "https://comersss.gitee.io/apk/image/group1_item1.png",
       "price": "0000",
       "cacode": "3"
     },
     {
       "categoryTwoArray": [
         {
+          "goodsId": 100000141,
           "name": "奥利奥麦旋风",
-          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_13_13116.png",
+          "imgsrc": "https://comersss.gitee.io/apk/image/group1_item1.png",
           "price": "16.00",
           "cacode": "4"
         },
         {
+          "goodsId": 100000142,
           "name": "巧克力圣代",
-          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_13_13116.png",
+          "imgsrc": "https://comersss.gitee.io/apk/image/group1_item1.png",
           "price": "8.00",
           "cacode": "4"
         },
         {
+          "goodsId": 100000143,
           "name": "芒果派",
-          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_13_13116.png",
+          "imgsrc": "https://comersss.gitee.io/apk/image/group1_item1.png",
           "price": "8.00",
           "cacode": "4"
         },
         {
+          "goodsId": 100000144,
           "name": "香芋派",
-          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_13_13116.png",
+          "imgsrc": "https://comersss.gitee.io/apk/image/group1_item1.png",
           "price": "8.00",
           "cacode": "4"
         },
         {
+          "goodsId": 100000145,
           "name": "超大甜筒",
-          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_13_13116.png",
+          "imgsrc": "https://comersss.gitee.io/apk/image/group1_item1.png",
           "price": "14.00",
           "cacode": "4"
         }
       ],
+      "goodsId": 100000146,
       "name": "特色甜点",
-      "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_4.png",
+      "imgsrc": "https://comersss.gitee.io/apk/image/group1_item1.png",
       "price": "0000",
       "cacode": "4"
     },
     {
       "categoryTwoArray": [
         {
+          "goodsId": 100000147,
           "name": "锡兰红茶",
-          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_10_10101.png",
+          "imgsrc": "https://comersss.gitee.io/apk/image/group1_item1.png",
           "price": "12.00",
           "cacode": "5"
         },
         {
+          "goodsId": 100000148,
           "name": "热朱古力/抗疲劳类",
-          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_10_10109.png",
+          "imgsrc": "https://comersss.gitee.io/apk/image/group1_item1.png",
           "price": "12.00",
           "cacode": "5"
         },
         {
+          "goodsId": 100000149,
           "name": "鲜煮咖啡",
-          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_10_10102.png",
+          "imgsrc": "https://comersss.gitee.io/apk/image/group1_item1.png",
           "price": "23.00",
           "cacode": "5"
         },
         {
+          "goodsId": 100000150,
           "name": "鲜牛奶",
-          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_10_10108.png",
+          "imgsrc": "https://comersss.gitee.io/apk/image/group1_item1.png",
           "price": "0000",
           "cacode": "5"
         },
         {
+          "goodsId": 100000151,
           "name": "阳光橙",
-          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_10_10104.png",
+          "imgsrc": "https://comersss.gitee.io/apk/image/group1_item1.png",
           "price": "16.00",
           "cacode": "5"
         },
         {
+          "goodsId": 100000152,
           "name": "优选豆浆",
-          "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_10_10103.png",
+          "imgsrc": "https://comersss.gitee.io/apk/image/group1_item1.png",
           "price": "8.00",
           "cacode": "5"
         }
       ],
+      "goodsId": 100000153,
       "name": "人气饮品",
-      "imgsrc": "https://121.10.217.171:9002/_ui/desktop/common/cmyy/image/app_5.png",
+      "imgsrc": "https://comersss.gitee.io/apk/image/group1_item1.png",
       "price": "0000",
       "cacode": "5"
     }
