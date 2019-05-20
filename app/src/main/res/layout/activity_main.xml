@@ -40,17 +40,18 @@
 
     </LinearLayout>
 
-
-    <RelativeLayout
+    <LinearLayout
         android:id="@+id/rl_order"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="10dp"
-        android:background="@color/white">
+        android:background="@color/white"
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
             android:orientation="horizontal">
 
             <android.support.v7.widget.RecyclerView
@@ -135,25 +136,26 @@
 
         </LinearLayout>
 
-    </RelativeLayout>
+    </LinearLayout>
 
-    <RelativeLayout
+    <LinearLayout
         android:id="@+id/rl_car"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="10dp"
         android:background="@color/group_bg"
+        android:orientation="vertical"
         android:visibility="gone">
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/bs_recyclerview"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="0dp"
+            android:layout_weight="1" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="150dp"
-            android:layout_alignParentBottom="true"
             android:background="@color/white"
             android:orientation="vertical">
 
@@ -203,6 +205,6 @@
 
         </LinearLayout>
 
-    </RelativeLayout>
+    </LinearLayout>
 
 </LinearLayout>

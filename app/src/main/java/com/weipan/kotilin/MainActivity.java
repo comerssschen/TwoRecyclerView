@@ -18,7 +18,7 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
-import android.widget.RelativeLayout;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -88,7 +88,7 @@ public class MainActivity extends BaseActivity {
     @BindView(R.id.tv_gocar)
     TextView tvGocar;
     @BindView(R.id.rl_order)
-    RelativeLayout rlOrder;
+    LinearLayout rlOrder;
     @BindView(R.id.bs_recyclerview)
     RecyclerView bsRecyclerview;
     @BindView(R.id.bs_tv_totalmoney)
@@ -98,7 +98,7 @@ public class MainActivity extends BaseActivity {
     @BindView(R.id.bs_bt_gopay)
     TextView bsBtGopay;
     @BindView(R.id.rl_car)
-    RelativeLayout rlCar;
+    LinearLayout rlCar;
     @BindView(R.id.tv_cancle)
     TextView tvCancle;
     private int divider = ConvertUtils.dp2px(10);
@@ -285,6 +285,7 @@ public class MainActivity extends BaseActivity {
 
         recycOne.setAdapter(oneAdapter);
         recycTwo.setAdapter(twoAdapter);
+        select(0);
         oneAdapter.setOnItemClickListener(new BaseQuickAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(BaseQuickAdapter adapter, View view, int position) {
@@ -319,7 +320,8 @@ public class MainActivity extends BaseActivity {
                         if (twoData.get(first).getId() + 1 > oneData.get(oneData.size() - 1).getId()) {
                             now = twoData.get(first).getId();
                         } else {
-                            now = twoData.get(first).getId() + 1;
+//                            now = twoData.get(first).getId() + 1;
+                            now = twoData.get(first).getId();
                         }
                     }
                     //滚动主列表
