@@ -151,7 +151,7 @@ public class MainActivity extends BaseActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        helper = new CountDownHelper(tvCancle, 90, 1);
+        helper = new CountDownHelper(tvCancle, 90, 1, "取消点餐");
         helper.setOnFinishListener(new CountDownHelper.OnFinishListener() {
             @Override
             public void fin() {
@@ -242,7 +242,6 @@ public class MainActivity extends BaseActivity {
             return result;
         }
     }
-
 
     private void initView() {
         loadingDialog = new LoadingDialog(MainActivity.this, "支付中...");
@@ -345,6 +344,7 @@ public class MainActivity extends BaseActivity {
             @Override
             public void onItemChildClick(BaseQuickAdapter adapter, View view, int position) {
                 if (view.getId() == R.id.iv_add) {
+                    ringtone.play();
                     addCar(twoData.get(position));
                 }
             }
@@ -436,7 +436,9 @@ public class MainActivity extends BaseActivity {
         int count = 0;
         if (ObjectUtils.isEmpty(carList) && carList.size() == 0) {
 //            btGoPay.setEnabled(false);
+            tvTotalCount.setVisibility(View.INVISIBLE);
         } else {
+            tvTotalCount.setVisibility(View.VISIBLE);
             for (CarBean bean1 : carList) {
                 price = price + Float.parseFloat(bean1.getTotalPrice());
                 count = count + bean1.getConut();
@@ -684,7 +686,6 @@ public class MainActivity extends BaseActivity {
 
     }
 
-
     public void doSuceess(String payType) {
         DouHaoPrint(carList, payType);
         Intent intent = new Intent(MainActivity.this, SucessActivity.class);
@@ -697,6 +698,7 @@ public class MainActivity extends BaseActivity {
 
     @OnClick({R.id.tv_total_count, R.id.bs_bt_gopay, R.id.tv_gocar, R.id.tv_cancle})
     public void onViewClicked(View view) {
+        ringtone.play();
         switch (view.getId()) {
             case R.id.tv_cancle:
                 if (ObjectUtils.isEmpty(closeConfirmDialog)) {

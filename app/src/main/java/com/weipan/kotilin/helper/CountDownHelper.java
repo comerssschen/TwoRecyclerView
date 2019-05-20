@@ -32,12 +32,12 @@ public class CountDownHelper {
             @Override
             public void onTick(long time) {
                 int second = (int) ((time + 15) / 1000);
-                textView.setText("取消点餐(" + second + "s)");
+                textView.setText(tip + "(" + second + "s)");
             }
 
             @Override
             public void onFinish() {
-                textView.setText("取消点餐");
+                textView.setText(tip);
                 if (listener != null) {
                     listener.fin();
                 }

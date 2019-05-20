@@ -97,9 +97,10 @@
                     android:layout_marginTop="20dp"
                     android:background="@drawable/car_count_shape"
                     android:gravity="center"
-                    android:text="86"
+                    android:text="0"
                     android:textColor="@color/header"
-                    android:textSize="12sp" />
+                    android:textSize="12sp"
+                    android:visibility="invisible" />
             </RelativeLayout>
 
             <TextView

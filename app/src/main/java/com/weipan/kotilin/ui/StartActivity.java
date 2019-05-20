@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 import com.blankj.utilcode.util.BarUtils;
 import com.blankj.utilcode.util.ObjectUtils;
+import com.blankj.utilcode.util.PermissionUtils;
 import com.blankj.utilcode.util.ToastUtils;
 import com.google.gson.Gson;
 import com.lzy.okgo.OkGo;
@@ -126,6 +127,7 @@ public class StartActivity extends BaseActivity {
         switch (view.getId()) {
             case R.id.tv_hind:
                 BarUtils.setNavBarVisibility(this, true);
+                PermissionUtils.launchAppDetailsSettings();
                 break;
             case R.id.tv_go_order:
                 Intent intent = new Intent(StartActivity.this, MainActivity.class);

@@ -64,7 +64,7 @@ public class SucessActivity extends BaseActivity {
         }
         tvBtParm1.setText("实付 ￥" + PayMoney);
 //        EventBus.getDefault().post(new SucessEvent(menus));
-        CountDownHelper helper = new CountDownHelper(tvTimeTiger, 10, 1);
+        CountDownHelper helper = new CountDownHelper(tvTimeTiger, 10, 1, "立即结束");
         helper.setOnFinishListener(new CountDownHelper.OnFinishListener() {
             @Override
             public void fin() {

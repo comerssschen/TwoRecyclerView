@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="#fff8f8f8"
     android:orientation="vertical">
 
     <LinearLayout
@@ -27,40 +27,45 @@
             android:textSize="12sp" />
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal|center_vertical"
-        android:orientation="horizontal"
-        android:paddingVertical="5dp">
-
-        <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:src="@drawable/pay_succes" />
+        android:layout_height="160dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:background="@color/white"
-            android:text="订单详情"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@drawable/pay_succes"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:text="订单支付成功"
             android:textColor="#242424"
-            android:textSize="10sp" />
-    </LinearLayout>
+            android:textSize="23sp" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="您的取餐号码为 0945"
+            android:textColor="@color/true_black"
+            android:textSize="26sp" />
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/lly_shopcar"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#EAEAEA"
         android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="15dp"
             android:layout_weight="1.0"
             android:orientation="vertical">
 
@@ -76,68 +81,73 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:paddingHorizontal="10dp">
+                android:layout_marginRight="18dp"
+                android:gravity="end">
 
                 <TextView
                     android:id="@+id/tv_total_count"
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="共2件商品"
-                    android:textColor="#5A5A5A"
-                    android:textSize="10sp" />
+                    android:textColor="@color/title_color"
+                    android:textSize="16sp" />
 
                 <TextView
                     android:id="@+id/tv_total_money"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
                     android:text="合计：￥45.00"
-                    android:textColor="#5A5A5A"
-                    android:textSize="10sp" />
+                    android:textColor="@color/title_color"
+                    android:textSize="16sp" />
             </LinearLayout>
         </LinearLayout>
 
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#EB3434"
-            android:orientation="horizontal"
-            android:paddingVertical="5dp">
+            android:layout_height="150dp"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/tv_bt_parm1"
+            <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="15dp"
-                android:gravity="center_vertical"
-                android:text="654465"
-                android:textColor="#FFFFFF"
-                android:textSize="10sp"
-                android:textStyle="bold" />
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/tv_bt_parm2"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginStart="22dp"
-                android:layout_weight="1"
-                android:gravity="center_vertical"
-                android:text="优惠金额  ￥0.00"
-                android:textColor="#FFFFFF"
-                android:textSize="8sp" />
+                <TextView
+                    android:id="@+id/tv_bt_parm1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="654465"
+                    android:textColor="@color/title_color"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_bt_parm2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="优惠金额  ￥0.00"
+                    android:textColor="@color/content_color"
+                    android:textSize="16sp" />
+            </LinearLayout>
 
             <TextView
                 android:id="@+id/tv_time_tiger"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="20dp"
-                android:gravity="center_vertical"
-                android:text="倒计时"
-                android:textColor="#FFFFFF"
-                android:textSize="10sp" />
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/common_backgroud_black_shape"
+                android:gravity="center"
+                android:text="立即结束"
+                android:textColor="@color/header"
+                android:textSize="20sp" />
         </LinearLayout>
 
     </LinearLayout>
