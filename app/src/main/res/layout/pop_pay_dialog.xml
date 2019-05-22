@@ -26,13 +26,13 @@
                 android:textColor="@color/title_color"
                 android:textSize="28sp" />
 
-
             <ImageView
                 android:id="@+id/iv_close"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:layout_alignParentEnd="true"
-                android:layout_margin="10dp"
+                android:layout_centerVertical="true"
+                android:padding="20dp"
                 android:src="@drawable/start_close" />
         </RelativeLayout>
 
@@ -94,14 +94,6 @@
                 android:src="@drawable/icon_pay_code_pay" />
 
         </LinearLayout>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_margin="10dp"
-            android:text="注：刷脸支付仅限支持微信"
-            android:textSize="16sp" />
 
     </LinearLayout>
 </RelativeLayout>

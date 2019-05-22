@@ -1,6 +1,5 @@
 package com.weipan.kotilin.adapter;
 
-
 import android.support.annotation.Nullable;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;

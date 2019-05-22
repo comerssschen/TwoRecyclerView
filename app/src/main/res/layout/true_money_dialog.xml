@@ -10,7 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingVertical="10dp"
-        android:text="交易超时"
+        android:text="开启一分钱扣款"
         android:textColor="@color/title_color"
         android:textSize="22sp" />
 
@@ -18,7 +18,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="交易超时，系统将10秒后自动关闭订单，如需继续点餐请点击继续点餐按钮！"
+        android:text="开启后，每次支付时的金额是0.01元"
         android:textColor="@color/content_color"
         android:textSize="12sp" />
 
@@ -37,19 +37,19 @@
             android:background="@drawable/common_backgroud_black_shape"
             android:gravity="center"
             android:paddingHorizontal="5dp"
-            android:text="关闭订单(10s)"
+            android:text="关闭"
             android:textColor="@color/title_color"
             android:textSize="12sp" />
 
         <TextView
-            android:id="@+id/tv_cotinue"
+            android:id="@+id/tv_open"
             android:layout_width="100dp"
             android:layout_height="30dp"
             android:layout_marginLeft="10dp"
             android:background="@drawable/common_backgroud_shape"
             android:gravity="center"
             android:paddingHorizontal="5dp"
-            android:text="继续点餐"
+            android:text="开启"
             android:textColor="@color/white"
             android:textSize="12sp" />
     </LinearLayout>

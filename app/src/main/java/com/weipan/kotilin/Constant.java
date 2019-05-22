@@ -14,4 +14,5 @@ public class Constant {
     public static String mch_id = "1491129582";
     public static String sub_appid = "wxddd1a06745848ded";
     public static String sub_mch_id = "1505209351";
+    public static int OrderNum = 101;
 }

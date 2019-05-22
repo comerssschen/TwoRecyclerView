@@ -6,7 +6,9 @@ import android.view.View;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.blankj.utilcode.util.SPUtils;
 import com.weipan.kotilin.R;
+import com.weipan.kotilin.SoundPlayUtils;
 import com.weipan.kotilin.adapter.SusceeAdapter;
 import com.weipan.kotilin.bean.CarBean;
 import com.weipan.kotilin.helper.CountDownHelper;
@@ -35,10 +37,13 @@ public class SucessActivity extends BaseActivity {
     TextView tvTimeTiger;
     @BindView(R.id.lv_menus)
     ListView lvMenus;
+    @BindView(R.id.tv_ordernum)
+    TextView tvOrdernum;
     private SusceeAdapter menusAdapter;
     private DecimalFormat decimalFormat = new DecimalFormat("0.00");
     private String PayMoney;
     private int totalCount;
+    private int OrderNum;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +51,8 @@ public class SucessActivity extends BaseActivity {
         setContentView(R.layout.activity_sucess);
         ButterKnife.bind(this);
         totalCount = getIntent().getIntExtra("count", 0);
+        OrderNum = getIntent().getIntExtra("OrderNum", 0);
+        tvOrdernum.setText("您的取餐号码为 :  " + OrderNum);
         ArrayList<CarBean> menus = (ArrayList<CarBean>) getIntent().getSerializableExtra("menus");
         Log.i("test", "menus = " + menus.toString());
         menusAdapter = new SusceeAdapter(this, menus);
@@ -57,7 +64,7 @@ public class SucessActivity extends BaseActivity {
         tvTotalMoney.setText("合计 ：￥" + decimalFormat.format(price));
         menusAdapter.update(menus);
         tvTotalCount.setText("共" + totalCount + "件商品");
-        if (false) {
+        if (SPUtils.getInstance().getBoolean("realMoney", false)) {
             PayMoney = price + "";
         } else {
             PayMoney = "0.01";
@@ -77,7 +84,7 @@ public class SucessActivity extends BaseActivity {
 
     @OnClick({R.id.tv_time_tiger})
     public void onViewClicked(View view) {
-        ringtone.play();
+        SoundPlayUtils.play(1);
         switch (view.getId()) {
             case R.id.tv_time_tiger:
                 finish();

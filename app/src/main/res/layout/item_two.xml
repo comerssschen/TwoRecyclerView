@@ -4,13 +4,14 @@
     android:layout_width="match_parent"
     android:layout_height="145dp"
     android:background="@drawable/group1_item1"
-    android:orientation="vertical"
-    android:padding="12dp">
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
         android:singleLine="true"
         android:text="香辣鸡腿堡套餐"
         android:textColor="@color/white"
@@ -19,6 +20,7 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="0dp"
+        android:layout_marginLeft="12dp"
         android:layout_weight="1"
         android:orientation="horizontal">
 
@@ -38,12 +40,12 @@
             android:textSize="12sp" />
     </LinearLayout>
 
-
     <ImageView
         android:id="@+id/iv_add"
-        android:layout_width="21dp"
-        android:layout_height="21dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_gravity="end"
+        android:padding="15dp"
         android:scaleType="fitXY"
         android:src="@drawable/add" />
 

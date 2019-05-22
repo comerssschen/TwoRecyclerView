@@ -7,7 +7,6 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import com.blankj.utilcode.util.ObjectUtils;
 import com.weipan.kotilin.R;
 import com.weipan.kotilin.bean.CarBean;
 
@@ -47,11 +46,7 @@ public class SusceeAdapter extends BaseAdapter {
         ViewHold hold = null;
         if (convertView == null) {
             hold = new ViewHold();
-//            if (mContext instanceof MainActivity) {
-//                convertView = LayoutInflater.from(mContext).inflate(R.layout.menus_presentation_items_layout, null);
-//            } else {
             convertView = LayoutInflater.from(mContext).inflate(R.layout.menus_succes_items_layout, null);
-//            }
             hold.tvName = convertView.findViewById(R.id.tvName);
             hold.tvMoney = convertView.findViewById(R.id.tvMoney);
             hold.tvcount = convertView.findViewById(R.id.tv_count);
@@ -61,14 +56,9 @@ public class SusceeAdapter extends BaseAdapter {
             hold = (ViewHold) convertView.getTag();
         }
         hold.tvName.setText(mMenus.get(position).getName());
-//        String unit = mMenus.get(position).getConut() + "";
-//        unit = ObjectUtils.isEmpty(unit) ? "-" : unit;
-        hold.tvunit.setText(mMenus.get(position).getPrice()/* + "/" + unit*/);
+        hold.tvunit.setText(mMenus.get(position).getPrice());
         hold.tvcount.setText("*" + mMenus.get(position).getConut());
         hold.tvMoney.setText(mMenus.get(position).getTotalPrice());
-//        if (mContext instanceof MainActivity) {
-//            hold.tvunit.setVisibility(View.GONE);
-//        }
         return convertView;
     }
 

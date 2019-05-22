@@ -25,6 +25,7 @@ import android.widget.Toast;
 import com.blankj.utilcode.util.ActivityUtils;
 import com.blankj.utilcode.util.ConvertUtils;
 import com.blankj.utilcode.util.ObjectUtils;
+import com.blankj.utilcode.util.SPUtils;
 import com.blankj.utilcode.util.TimeUtils;
 import com.blankj.utilcode.util.ToastUtils;
 import com.chad.library.adapter.base.BaseQuickAdapter;
@@ -193,15 +194,6 @@ public class MainActivity extends BaseActivity {
         //初始化左侧列表数据
         List<DataBean.CategoryOneArrayBean> categoryOneArray = dataBean.getCategoryOneArray();
 
-//        for (DataBean.CategoryOneArrayBean categoryOneArrayBean : categoryOneArray) {
-//            oneData.add(new OneBean(Integer.parseInt(categoryOneArrayBean.getCacode()), categoryOneArrayBean.getName()));
-////            twoData.add(new TwoBean(Integer.parseInt(categoryOneArrayBean.getCacode()), categoryOneArrayBean.getName(), true, TwoBean.TITLE));
-//            for (DataBean.CategoryOneArrayBean.CategoryTwoArrayBean categoryTwoArrayBean : categoryOneArrayBean.getCategoryTwoArray()) {
-//                twoData.add(new TwoBean(Integer.parseInt(categoryTwoArrayBean.getCacode()), categoryTwoArrayBean.getName(), categoryTwoArrayBean.getImgsrc(), categoryTwoArrayBean.getPrice(), false, TwoBean.CONTENT));
-//            }
-//        }
-
-
         int j = 0;
         for (int i = 0; i < categoryOneArray.size(); i++) {
             oneData.add(new OneBean(Integer.parseInt(categoryOneArray.get(i).getCacode()), categoryOneArray.get(i).getName(), groupBgCheck[i], groupBgUnCheck[i]));
@@ -289,6 +281,7 @@ public class MainActivity extends BaseActivity {
         oneAdapter.setOnItemClickListener(new BaseQuickAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(BaseQuickAdapter adapter, View view, int position) {
+                SoundPlayUtils.play(1);
                 rightClick = true;
                 //点击变色
                 select(position);
@@ -346,7 +339,7 @@ public class MainActivity extends BaseActivity {
             @Override
             public void onItemChildClick(BaseQuickAdapter adapter, View view, int position) {
                 if (view.getId() == R.id.iv_add) {
-                    ringtone.play();
+                    SoundPlayUtils.play(1);
                     addCar(twoData.get(position));
                 }
             }
@@ -508,6 +501,11 @@ public class MainActivity extends BaseActivity {
             mUsbPrinter.outputStringLn("下单时间：" + TimeUtils.getNowString());
             mUsbPrinter.outputStringLn("支付方式：" + payType);
             mUsbPrinter.outputStringLn("********************************");
+            mUsbPrinter.outputStringLn("取餐号码：");
+            mUsbPrinter.doFunction(Const.TX_FONT_SIZE, Const.TX_SIZE_3X, Const.TX_SIZE_3X);
+            mUsbPrinter.outputStringLn("    " + Constant.OrderNum);
+            mUsbPrinter.resetFont();
+            mUsbPrinter.outputStringLn("\n********************************");
             printString("商品名称/数量/单位", "合计");
             mUsbPrinter.outputStringLn("--------------------------------");
             float price = 0.00f;
@@ -628,11 +626,13 @@ public class MainActivity extends BaseActivity {
                                                 }
                                             });
                                         } else {
+                                            SoundPlayUtils.play(4);
                                             ToastUtils.showShort(resultFacePay.getMsg());
                                         }
 
                                     } catch (Exception e) {
                                         e.printStackTrace();
+                                        SoundPlayUtils.play(4);
                                         ToastUtils.showShort("网络异常");
                                     }
                                 }
@@ -640,15 +640,19 @@ public class MainActivity extends BaseActivity {
                                 @Override
                                 public void onError(Response<String> response) {
                                     super.onError(response);
+                                    SoundPlayUtils.play(4);
                                     ToastUtils.showShort("网络异常：" + response.body());
                                 }
                             });
 
                 } else if (TextUtils.equals(code, "USER_CANCEL")) {
+                    SoundPlayUtils.play(8);
                     ToastUtils.showShort("用户取消");
                 } else if (TextUtils.equals(code, "SCAN_PAYMENT")) {
+                    SoundPlayUtils.play(4);
                     ToastUtils.showShort("扫码支付");
                 } else {
+                    SoundPlayUtils.play(4);
                     ToastUtils.showShort(paramMap.get("return_msg").toString());
                 }
 
@@ -656,7 +660,6 @@ public class MainActivity extends BaseActivity {
         });
 
     }
-
 
     private void scanQRCode(String result) {
         loadingDialog.show();
@@ -675,6 +678,7 @@ public class MainActivity extends BaseActivity {
                     doSuceess(ObjectUtils.equals(result.getPay_type(), "1") ? "微信扫码支付" : ObjectUtils.equals(result.getPay_type(), "2") ? "支付宝扫码支付" : "扫码支付");
                 } catch (JsonSyntaxException e) {
                     e.printStackTrace();
+                    SoundPlayUtils.play(4);
                     ToastUtils.showShort("解析Json字符串失败");
                 }
             }
@@ -682,6 +686,7 @@ public class MainActivity extends BaseActivity {
             @Override
             public void onFail(String errMsg) {
                 loadingDialog.dismiss();
+                SoundPlayUtils.play(4);
                 ToastUtils.showShort(errMsg);
             }
         });
@@ -689,10 +694,13 @@ public class MainActivity extends BaseActivity {
     }
 
     public void doSuceess(String payType) {
+        SoundPlayUtils.play(5);
+        Constant.OrderNum++;
         DouHaoPrint(carList, payType);
         Intent intent = new Intent(MainActivity.this, SucessActivity.class);
         intent.putExtra("menus", (Serializable) carList);
         intent.putExtra("count", totalCount);
+        intent.putExtra("OrderNum", Constant.OrderNum);
         startActivity(intent);
         finish();
     }
@@ -700,9 +708,10 @@ public class MainActivity extends BaseActivity {
 
     @OnClick({R.id.tv_total_count, R.id.bs_bt_gopay, R.id.tv_gocar, R.id.tv_cancle})
     public void onViewClicked(View view) {
-        ringtone.play();
+
         switch (view.getId()) {
             case R.id.tv_cancle:
+                SoundPlayUtils.play(1);
                 if (ObjectUtils.isEmpty(closeConfirmDialog)) {
                     closeConfirmDialog = new CloseConfirmDialog(MainActivity.this);
                     closeConfirmDialog.setOnCloseOrderLitener(new CloseConfirmDialog.OnCloseOrderLitener() {
@@ -715,21 +724,24 @@ public class MainActivity extends BaseActivity {
                 closeConfirmDialog.show();
                 break;
             case R.id.bs_bt_gopay:
-                if (false) {
+                SoundPlayUtils.play(7);
+                if (SPUtils.getInstance().getBoolean("realMoney", false)) {
                     realPayMoney = totalMoney;
                 } else {
                     realPayMoney = "0.01";
                 }
                 showPayPopWindow();
                 break;
-
             case R.id.tv_total_count:
                 break;
             case R.id.tv_gocar:
                 if (carList.size() > 0) {
+                    SoundPlayUtils.play(1);
                     rlOrder.setVisibility(View.GONE);
                     rlCar.setVisibility(View.VISIBLE);
                     updateCar();
+                } else {
+                    SoundPlayUtils.play(6);
                 }
                 break;
             default:
@@ -772,4 +784,5 @@ public class MainActivity extends BaseActivity {
         return bottomSheet;
     }
      */
+
 }

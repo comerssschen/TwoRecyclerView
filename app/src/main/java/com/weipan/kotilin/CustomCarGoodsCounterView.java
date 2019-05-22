@@ -78,6 +78,7 @@ public class CustomCarGoodsCounterView extends FrameLayout implements View.OnCli
     };
 
     public void onClick(View v) {
+        SoundPlayUtils.play(1);
         switch (v.getId()) {
             case R.id.tv_add:
                 addNumber();

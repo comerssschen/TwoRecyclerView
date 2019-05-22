@@ -8,6 +8,7 @@ import android.widget.TextView;
 
 
 import com.weipan.kotilin.R;
+import com.weipan.kotilin.SoundPlayUtils;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -36,7 +37,7 @@ public class FailActivity extends BaseActivity {
 
     @OnClick({R.id.bt_try_again, R.id.bt_cancel})
     public void onViewClicked(View view) {
-        ringtone.play();
+        SoundPlayUtils.play(1);
         switch (view.getId()) {
             case R.id.bt_try_again:
                 finish();

@@ -7,7 +7,6 @@ import android.os.RemoteException;
 import android.support.annotation.Nullable;
 import android.util.Log;
 import android.view.View;
-import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.blankj.utilcode.util.BarUtils;
@@ -23,12 +22,13 @@ import com.tencent.wxpayface.WxPayFace;
 import com.weipan.kotilin.Constant;
 import com.weipan.kotilin.MainActivity;
 import com.weipan.kotilin.R;
+import com.weipan.kotilin.SoundPlayUtils;
 import com.weipan.kotilin.bean.json.ArgGetAuthInfo;
+import com.weipan.kotilin.view.TrueMoneyDialog;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -37,8 +37,8 @@ import butterknife.OnClick;
  * 邮箱：904359289@qq.com
  */
 public class StartActivity extends BaseActivity {
-    @BindView(R.id.iv_setting)
-    ImageView ivSetting;
+
+    private TrueMoneyDialog trueMoneyDialog;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -123,13 +123,19 @@ public class StartActivity extends BaseActivity {
 
     @OnClick({R.id.iv_setting, R.id.tv_go_order, R.id.tv_hind})
     public void onViewClicked(View view) {
-        ringtone.play();
         switch (view.getId()) {
+            case R.id.iv_setting:
+                SoundPlayUtils.play(1);
+                trueMoneyDialog = new TrueMoneyDialog(StartActivity.this);
+                trueMoneyDialog.show();
+                break;
             case R.id.tv_hind:
+                SoundPlayUtils.play(2);
                 BarUtils.setNavBarVisibility(this, true);
                 PermissionUtils.launchAppDetailsSettings();
                 break;
             case R.id.tv_go_order:
+                SoundPlayUtils.play(3);
                 Intent intent = new Intent(StartActivity.this, MainActivity.class);
                 startActivity(intent);
                 break;
@@ -137,4 +143,5 @@ public class StartActivity extends BaseActivity {
                 break;
         }
     }
+
 }

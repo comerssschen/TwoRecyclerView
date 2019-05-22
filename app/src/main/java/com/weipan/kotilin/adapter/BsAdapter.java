@@ -1,15 +1,11 @@
 package com.weipan.kotilin.adapter;
 
-import android.support.annotation.Nullable;
-import android.view.View;
-
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
 import com.weipan.kotilin.CustomCarGoodsCounterView;
 import com.weipan.kotilin.R;
 import com.weipan.kotilin.bean.CarBean;
 
-import java.util.List;
 
 /**
  * 作者：create by comersss on 2019/5/16 16:17

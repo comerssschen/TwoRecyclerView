@@ -3,9 +3,6 @@ package com.weipan.kotilin.view;
 import android.app.Activity;
 import android.content.Context;
 import android.graphics.drawable.ColorDrawable;
-import android.media.Ringtone;
-import android.media.RingtoneManager;
-import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
@@ -14,8 +11,8 @@ import android.widget.ImageView;
 import android.widget.PopupWindow;
 import android.widget.TextView;
 
-import com.blankj.utilcode.util.Utils;
 import com.weipan.kotilin.R;
+import com.weipan.kotilin.SoundPlayUtils;
 
 
 /**
@@ -27,7 +24,6 @@ public class PayPopupWindow extends PopupWindow {
     private Context mContext; // 上下文参数
     private PopLitener mLlistener;
     private String mParm1, mParm2;
-    private Ringtone ringtone;
 
     public interface PopLitener {
         void onClosed();
@@ -49,8 +45,6 @@ public class PayPopupWindow extends PopupWindow {
      * 设置布局以及点击事件
      */
     private void Init() {
-        Uri notification = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
-        ringtone = RingtoneManager.getRingtone(Utils.getApp(), notification);
         LayoutInflater inflater = (LayoutInflater) mContext
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         assert inflater != null;
@@ -66,7 +60,7 @@ public class PayPopupWindow extends PopupWindow {
         ivClose.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ringtone.play();
+                SoundPlayUtils.play(1);
                 if (mLlistener != null) {
                     mLlistener.onClosed();
                 }
@@ -76,7 +70,7 @@ public class PayPopupWindow extends PopupWindow {
         tvFacePay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ringtone.play();
+                SoundPlayUtils.play(1);
                 if (mLlistener != null) {
                     mLlistener.onPart1();
                 }
@@ -85,7 +79,7 @@ public class PayPopupWindow extends PopupWindow {
         tvBt2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ringtone.play();
+                SoundPlayUtils.play(1);
                 if (mLlistener != null) {
                     mLlistener.onPart2();
                 }

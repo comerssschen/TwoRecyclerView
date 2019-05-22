@@ -2,9 +2,6 @@ package com.weipan.kotilin.view;
 
 import android.app.Activity;
 import android.app.Dialog;
-import android.media.Ringtone;
-import android.media.RingtoneManager;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.Display;
 import android.view.Gravity;
@@ -15,9 +12,9 @@ import android.widget.TextView;
 
 import com.blankj.utilcode.util.ActivityUtils;
 import com.blankj.utilcode.util.ObjectUtils;
-import com.blankj.utilcode.util.Utils;
 import com.weipan.kotilin.MainActivity;
 import com.weipan.kotilin.R;
+import com.weipan.kotilin.SoundPlayUtils;
 
 
 /**
@@ -31,7 +28,6 @@ public class CloseConfirmDialog extends Dialog {
     private OnCloseOrderLitener onCloseOrderLitener;
     public CountDownConfrimHelper helper;
     private TextView tvClose;
-    private Ringtone ringtone;
 
     public interface OnCloseOrderLitener {
         void close();
@@ -89,17 +85,13 @@ public class CloseConfirmDialog extends Dialog {
 
         setCancelable(false);
         setCanceledOnTouchOutside(false);
-
-        Uri notification = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
-        ringtone = RingtoneManager.getRingtone(Utils.getApp(), notification);
-
         tvClose = findViewById(R.id.tv_close);
         TextView tvCotinue = findViewById(R.id.tv_cotinue);
         tvClose.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                ringtone.play();
+                SoundPlayUtils.play(1);
                 if (!ObjectUtils.isEmpty(onCloseOrderLitener)) {
                     if (!ObjectUtils.isEmpty(helper)) {
                         helper.stop();
@@ -115,7 +107,7 @@ public class CloseConfirmDialog extends Dialog {
 
             @Override
             public void onClick(View v) {
-                ringtone.play();
+                SoundPlayUtils.play(1);
                 if (!ObjectUtils.isEmpty(helper)) {
                     helper.stop();
                 }
@@ -124,8 +116,6 @@ public class CloseConfirmDialog extends Dialog {
             }
         });
 
-
     }
-
 
 }
