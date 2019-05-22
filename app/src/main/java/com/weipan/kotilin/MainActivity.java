@@ -102,6 +102,8 @@ public class MainActivity extends BaseActivity {
     LinearLayout rlCar;
     @BindView(R.id.tv_cancle)
     TextView tvCancle;
+    @BindView(R.id.tv_back)
+    TextView tvBack;
     private int divider = ConvertUtils.dp2px(10);
     private int[] itemRes = {
             R.drawable.group1_item1, R.drawable.group1_item2, R.drawable.group1_item3, R.drawable.group1_item4, R.drawable.group1_item5, R.drawable.group1_item6, R.drawable.group1_item7, R.drawable.group1_item8, R.drawable.group1_item9, R.drawable.group1_item10, R.drawable.group1_item11, R.drawable.group1_item12, R.drawable.group1_item13, R.drawable.group1_item14, R.drawable.group1_item15, R.drawable.group1_item16, R.drawable.group1_item17, R.drawable.group1_item18
@@ -335,6 +337,13 @@ public class MainActivity extends BaseActivity {
             }
         });
 
+        twoAdapter.setOnItemClickListener(new BaseQuickAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(BaseQuickAdapter adapter, View view, int position) {
+                SoundPlayUtils.play(1);
+                addCar(twoData.get(position));
+            }
+        });
         twoAdapter.setOnItemChildClickListener(new BaseQuickAdapter.OnItemChildClickListener() {
             @Override
             public void onItemChildClick(BaseQuickAdapter adapter, View view, int position) {
@@ -705,11 +714,16 @@ public class MainActivity extends BaseActivity {
         finish();
     }
 
-
-    @OnClick({R.id.tv_total_count, R.id.bs_bt_gopay, R.id.tv_gocar, R.id.tv_cancle})
+    @OnClick({R.id.tv_total_count, R.id.bs_bt_gopay, R.id.tv_gocar, R.id.tv_cancle, R.id.tv_back})
     public void onViewClicked(View view) {
-
         switch (view.getId()) {
+            case R.id.tv_back:
+                SoundPlayUtils.play(1);
+                tvBack.setVisibility(View.GONE);
+                tvCancle.setVisibility(View.VISIBLE);
+                rlOrder.setVisibility(View.VISIBLE);
+                rlCar.setVisibility(View.GONE);
+                break;
             case R.id.tv_cancle:
                 SoundPlayUtils.play(1);
                 if (ObjectUtils.isEmpty(closeConfirmDialog)) {
@@ -739,6 +753,8 @@ public class MainActivity extends BaseActivity {
                     SoundPlayUtils.play(1);
                     rlOrder.setVisibility(View.GONE);
                     rlCar.setVisibility(View.VISIBLE);
+                    tvBack.setVisibility(View.VISIBLE);
+                    tvCancle.setVisibility(View.GONE);
                     updateCar();
                 } else {
                     SoundPlayUtils.play(6);

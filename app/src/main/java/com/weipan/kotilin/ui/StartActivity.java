@@ -2,6 +2,7 @@ package com.weipan.kotilin.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.IBinder;
 import android.os.Looper;
 import android.os.RemoteException;
 import android.support.annotation.Nullable;
@@ -17,6 +18,7 @@ import com.google.gson.Gson;
 import com.lzy.okgo.OkGo;
 import com.lzy.okgo.callback.StringCallback;
 import com.lzy.okgo.model.Response;
+import com.tencent.wxpayface.IWxPayFaceCallbackAIDL;
 import com.tencent.wxpayface.IWxPayfaceCallback;
 import com.tencent.wxpayface.WxPayFace;
 import com.weipan.kotilin.Constant;
@@ -48,6 +50,20 @@ public class StartActivity extends BaseActivity {
         WxPayFace.getInstance().initWxpayface(this, new IWxPayfaceCallback() {
             public void response(Map paramMap) throws RemoteException {
                 getAuthInfo();
+                Map<String, Object> hashMap = new HashMap<>();
+                hashMap.put("banner_state", 1);
+                WxPayFace.getInstance().updateWxpayfaceBannerState(hashMap, new IWxPayFaceCallbackAIDL() {
+                    @Override
+                    public void response(Map map) throws RemoteException {
+                        Log.i("test", "map =  updateWxpayfaceBannerState = " + map.toString());
+                    }
+
+                    @Override
+                    public IBinder asBinder() {
+                        Log.i("test", "map =  updateWxpayfaceBannerState = ");
+                        return null;
+                    }
+                });
             }
         });
     }
