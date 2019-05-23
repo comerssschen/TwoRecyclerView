@@ -47,25 +47,28 @@ public class StartActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start);
         ButterKnife.bind(this);
-        WxPayFace.getInstance().initWxpayface(this, new IWxPayfaceCallback() {
-            public void response(Map paramMap) throws RemoteException {
-                getAuthInfo();
-                Map<String, Object> hashMap = new HashMap<>();
-                hashMap.put("banner_state", 1);
-                WxPayFace.getInstance().updateWxpayfaceBannerState(hashMap, new IWxPayFaceCallbackAIDL() {
-                    @Override
-                    public void response(Map map) throws RemoteException {
-                        Log.i("test", "map =  updateWxpayfaceBannerState = " + map.toString());
-                    }
+        try {
+            WxPayFace.getInstance().initWxpayface(this, new IWxPayfaceCallback() {
+                public void response(Map paramMap) throws RemoteException {
+                    getAuthInfo();
+                    Map<String, Object> hashMap = new HashMap<>();
+                    hashMap.put("banner_state", 1);
+                    WxPayFace.getInstance().updateWxpayfaceBannerState(hashMap, new IWxPayFaceCallbackAIDL() {
+                        @Override
+                        public void response(Map map) throws RemoteException {
+                            Log.i("test", "map =  updateWxpayfaceBannerState = " + map.toString());
+                        }
 
-                    @Override
-                    public IBinder asBinder() {
-                        Log.i("test", "map =  updateWxpayfaceBannerState = ");
-                        return null;
-                    }
-                });
-            }
-        });
+                        @Override
+                        public IBinder asBinder() {
+                            Log.i("test", "map =  updateWxpayfaceBannerState = ");
+                            return null;
+                        }
+                    });
+                }
+            });
+        } catch (Exception ex) {
+        }
     }
 
     public void getAuthInfo() {
